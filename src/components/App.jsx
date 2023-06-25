@@ -40,7 +40,7 @@ export default class App extends React.Component {
 
 
 render() {
-  const {contacts, name, number, filter} = this.state;
+  const {contacts, filter} = this.state;
   const contactsArr = contacts.filter((contact) => contact.name.toLowerCase().includes(filter.toLowerCase().trim()));
   
 
